@@ -11,9 +11,12 @@ class Survey extends React.Component {
     super(props);
 
     this.state = {
-      rating: 0
+      rating: 0,
+      increasing: false,
+      decreasing: false
     };
   }
+
 
   increaseRating = () => {
     this.setState({ rating: this.state.rating + 1 });
